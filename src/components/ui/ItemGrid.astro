@@ -32,7 +32,7 @@ const {
         containerClass
       )}
     >
-      {items.map(({ title, description, icon, callToAction, classes: itemClasses = {} }) => (
+      {items.map(({ title, description, icon, callToAction, classes: itemClasses = {}, badge }) => (
         <div class="intersect-once motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
           <div class={twMerge('flex flex-row max-w-md', panelClass, itemClasses?.panel)}>
             <div class="flex justify-center">
@@ -44,7 +44,16 @@ const {
               )}
             </div>
             <div class="mt-0.5">
-              {title && <h3 class={twMerge('text-xl font-bold', titleClass, itemClasses?.title)}>{title}</h3>}
+              {title && <h3 class={twMerge('text-xl font-bold', titleClass, itemClasses?.title)}>
+                <div>
+                  {title}
+                  {badge && (
+                    <span class={twMerge(`ml-2 px-2 py-1 text-xs font-semibold rounded-full bg-primary text-white ${badge === 'TODO' ? 'bg-slate-400' : badge === 'DOING' ? 'bg-amber-500' : 'bg-emerald-500'}`)}>
+                      {badge}
+                    </span>
+                  )}
+                </div>
+                </h3>}
               {description && (
                 <p
                   class={twMerge(`${title ? 'mt-3' : ''} text-muted`, descriptionClass, itemClasses?.description)}

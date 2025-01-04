@@ -25,28 +25,24 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Try the demo',
+        href: 'https://composy-app.pages.dev/',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:test-pipe',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Join the waitlist', href: 'https://tally.so/r/n92KeQ' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/hero-image-composy.jpeg', alt: 'Composy Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 5.0</span> + Tailwind CSS
+      No-Code for <span class="hidden xl:inline">creating Apps with</span>
+      <span class="text-accent dark:text-white highlight"> Compose Multiplatform</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
+        <span class="font-semibold">Composy</span> is a no-code app builder that lets you create full native apps for Android, iOS, desktop and WASM with drag and drop and no code.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
     </Fragment>
   </Hero>
 
@@ -56,51 +52,80 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
-  <!-- <Features
-    id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+  <Features
+    id="milestones"
+    tagline="Milestones"
+    title="Milestones"
+    subtitle="We are building Composy to be the best no-code app builder for Compose Multiplatform. Follow our progress and join the waitlist to be the first to try it."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Free Demo',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Try the demo and see how easy it is to create an app with Composy.',
+        icon: 'tabler:test-pipe',
+        badge: 'DONE',
+        callToAction: {
+          text: 'Try the demo',
+          href: 'https://composy-app.pages.dev/',
+          target: '_blank',
+        },
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'No Code',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'No need to write a single line of code. Just drag and drop and your app is ready.',
+        icon: 'tabler:code-off',
+        badge: 'DOING',
       },
       {
-        title: 'Best Practices',
+        title: 'Multiplatform',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Powered by Compose Multiplatform, a modern toolkit for building native UIs for all platforms from a single codebase.',
+        icon: 'tabler:brand-databricks',
+        badge: 'DOING',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Export to JSON',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'Export your app or components to JSON and use them via json-to-compose library.',
+        icon: 'tabler:json',
+        badge: 'DOING',
+        callToAction: {
+          text: 'Read more',
+          href: 'https://github.com/jesusdmedinac/json-to-compose',
+          target: '_blank',
+        }
+      },
+      {
+        title: 'Drag & Drop',
+        description:
+          'Create your app by dragging and dropping components onto the canvas.',
+        icon: 'tabler:hand-grab',
+        badge: 'TODO',
+      },
+      {
+        title: 'App Store',
+        description:
+          'Deploy your app to App Store and Google Play',
         icon: 'tabler:rocket',
+        badge: 'TODO',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Export/Import to Code',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
+          'Export your app to code and continue working on it with Android Studio or Xcode. Import your code back to Composy and continue working on it with drag and drop.',
         icon: 'tabler:arrows-right-left',
+        badge: 'TODO',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Server-Driven UI',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Create dynamic UIs that can be updated without needing to update the app.',
+        icon: 'tabler:cloud',
+        badge: 'TODO',
       },
     ]}
   />
-  -->
 
   <!-- Content Widget **************** -->
 

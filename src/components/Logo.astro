@@ -1,9 +1,14 @@
 ---
 import { SITE } from 'astrowind:config';
+import logo from '~/assets/icons/logo.svg';
 ---
 
 <span
   class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
 >
-  🚀 {SITE?.name}
+<img 
+src={logo.src}
+class="w-8 h-8 md:w-6 md:h-6 inline-block mr-2 rtl:mr-0 rtl:ml-2"
+/> 
+{SITE?.name}
 </span>
