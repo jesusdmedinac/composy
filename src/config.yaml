@@ -11,7 +11,7 @@ metadata:
   title:
     default: Composy
     template: '%s — Composy'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 No-Code for creating Apps with Compose Multiplatform"
   robots:
     index: true
     follow: true
