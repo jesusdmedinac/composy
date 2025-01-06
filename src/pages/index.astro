@@ -172,42 +172,52 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <!-- 
   <Content
     isAfterContent
-    items={[
-      {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-      },
-      {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
-    ]}
+    title="Jesús Daniel Medina Cruz"
+    tagline="CEO & Founder"
+    subtitle="Kotlin Mobile Engineer | Android Mobile Engineer | iOS Mobile Engineer | Kotlin Expert | Compose Expert | Kotlin Multiplatform Expert | Mobile Consultant | Mobile Teacher"
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
+      src: '~/assets/images/jesusdmedinac.jpg',
       alt: 'Blueprint Image',
     }}
+    items={[
+      {
+        title: 'About Jesús Daniel Medina Cruz',
+        description: 'I am a skilled mobile app developer with extensive experience in Kotlin and Kotlin Multiplatform. I have over 8 years of hands-on experience building native Android applications and have successfully led Java-to-Kotlin migrations for development teams.',
+        callToAction: {
+          text: 'Read more',
+          href: 'https://jesusdmedinac.com/',
+          target: '_blank',
+        }
+      },
+      {
+        title: 'Desde0 Academy',
+        description: 'Do you have an idea or project that needs a helping hand? At Desde0 Academy, we connect you with talented interns who are ready to develop your websites and mobile apps, free of charge.',
+        callToAction: {
+          text: 'Read more',
+          href: 'https://desde0.jesusdmedinac.com/',
+          target: '_blank',
+        }
+      },
+      {
+        title: 'Kotlin Multiplatform',
+        description: 'Learn how to use Kotlin Multiplatform for Android and iOS, all the way to backend and frontend web development, maximizing the potential of the Kotlin language.',
+        callToAction: {
+          text: 'Read more',
+          href: 'https://kmp.jesusdmedinac.com/',
+          target: '_blank',
+        }
+      }
+    ]}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-  -->
 
   <!-- Content Widget **************** -->
 
@@ -421,26 +431,24 @@ const metadata = {
 
   <!-- CallToAction Widget *********** -->
 
-  <!-- 
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Try the demo',
+        href: 'https://composy-app.pages.dev/',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:test-pipe',
       },
+      { text: 'Join the waitlist', href: 'https://tally.so/r/n92KeQ' },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Composy<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"> for Compose Multiplatform</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      The no-code app builder for Native Development
     </Fragment>
   </CallToAction>
-  -->
 </Layout>
