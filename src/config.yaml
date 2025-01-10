@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: Composy
     images:
-      - url: '~/assets/images/hero-image-composy.jpeg'
+      - url: '~/assets/images/hero-image-composy.png'
         width: 1200
         height: 628
     type: website
